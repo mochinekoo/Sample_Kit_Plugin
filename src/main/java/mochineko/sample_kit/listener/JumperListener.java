@@ -28,8 +28,9 @@ public class JumperListener implements Listener {
         Location hook_loc = hook.getLocation();
         Location p_location = player.getLocation();
         Vector p_velocity = player.getVelocity();
-
-        Vector direction = hook_loc.toVector().subtract(p_location.toVector()).normalize();
-        player.setVelocity(p_velocity.add(direction));
+        if (hook.isOnGround()) {
+            Vector direction = hook_loc.toVector().subtract(p_location.toVector()).normalize();
+            player.setVelocity(p_velocity.add(direction).multiply(1.5));
+        }
     }
 }
