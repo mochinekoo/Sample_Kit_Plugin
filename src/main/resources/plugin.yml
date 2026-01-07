@@ -1,0 +1,11 @@
+name: Sample_Kit
+version: '1.0-SNAPSHOT'
+main: mochineko.sample_kit.Main
+api-version: '1.20'
+authors: [ mochi__neko ]
+website: https://x.com/mc_mochineko
+
+commands:
+  sample_kit:
+    description: キットに関するコマンド
+    permission: mochineko.sample_kit.sample_kit
