@@ -2,12 +2,13 @@ package mochineko.sample_kit.manager;
 
 import org.bukkit.OfflinePlayer;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class KitManager {
 
     private static KitManager instance;
-    private static Map<OfflinePlayer, KitBase> kitPlayers;
+    private static Map<OfflinePlayer, KitBase> kitPlayers = new HashMap<>();
 
     private KitManager() {}
 
